@@ -5,19 +5,16 @@
 #include <ringbuffer.hpp>
 #include "controller.hpp"
 
-#include <warning-disable.hpp>
 #include <stdexcept>
+#include <warning-disable.hpp>
 #include <warning-enable.hpp>
 
-tonplugins::tonstream::processor::processor(void* data)
-	: Steinberg::Vst::AudioEffect()
+tonplugins::tonstream::processor::processor(void* data) : Steinberg::Vst::AudioEffect()
 {
 	setControllerClass(Steinberg::FUID::fromTUID(tonplugins::tonstream::controller::tuid.data()));
 }
 
-tonplugins::tonstream::processor::~processor()
-{
-}
+tonplugins::tonstream::processor::~processor() {}
 
 Steinberg::tresult PLUGIN_API tonplugins::tonstream::processor::initialize(Steinberg::FUnknown* context)
 {

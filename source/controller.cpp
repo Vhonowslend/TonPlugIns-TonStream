@@ -3,19 +3,14 @@
 #include "controller.hpp"
 #include <core.hpp>
 
-#include <warning-disable.hpp>
 #include <base/source/fstreamer.h>
 #include <vstgui/plugin-bindings/vst3editor.h>
+#include <warning-disable.hpp>
 #include <warning-enable.hpp>
 
-tonplugins::tonstream::controller::controller(void* data)
-	: Steinberg::Vst::EditControllerEx1(), Steinberg::Vst::ChannelContext::IInfoListener()
-{
-}
+tonplugins::tonstream::controller::controller(void* data) : Steinberg::Vst::EditControllerEx1(), Steinberg::Vst::ChannelContext::IInfoListener() {}
 
-tonplugins::tonstream::controller::~controller()
-{
-}
+tonplugins::tonstream::controller::~controller() {}
 
 Steinberg::tresult PLUGIN_API tonplugins::tonstream::controller::initialize(Steinberg::FUnknown* context)
 {
