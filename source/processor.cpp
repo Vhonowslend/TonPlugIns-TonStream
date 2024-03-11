@@ -5,8 +5,8 @@
 #include <ringbuffer.hpp>
 #include "controller.hpp"
 
-#include <stdexcept>
 #include <warning-disable.hpp>
+#include <stdexcept>
 #include <warning-enable.hpp>
 
 tonplugins::tonstream::processor::processor(void* data) : Steinberg::Vst::AudioEffect()

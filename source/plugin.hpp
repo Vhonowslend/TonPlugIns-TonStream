@@ -4,6 +4,6 @@
 #include <version.hpp>
 #include <core.hpp>
 
-#include <public.sdk/source/main/moduleinit.h>
 #include <warning-disable.hpp>
+#include <public.sdk/source/main/moduleinit.h>
 #include <warning-enable.hpp>

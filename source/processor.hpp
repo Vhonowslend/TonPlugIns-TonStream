@@ -1,7 +1,7 @@
 // Copyright 2023 Michael Fabian 'Xaymar' Dirks < info @xaymar.com>
 
-#include <string_view>
 #include <warning-disable.hpp>
+#include <string_view>
 
 #include <public.sdk/source/vst/vstaudioeffect.h>
 #include <warning-enable.hpp>

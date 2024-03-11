@@ -4,8 +4,8 @@
 #include "controller.hpp"
 #include "processor.hpp"
 
-#include <public.sdk/source/main/pluginfactory.h>
 #include <warning-disable.hpp>
+#include <public.sdk/source/main/pluginfactory.h>
 
 #include <public.sdk/source/main/moduleinit.cpp>
 #if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__NT__)
