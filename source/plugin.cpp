@@ -23,7 +23,7 @@ DEF_CLASS2(INLINE_UID_FROM_FUID(Steinberg::FUID::fromTUID(tonplugins::tonstream:
 		   "TonStream", // Name
 		   Vst::kDistributable, // Allow cross-computer usage.
 		   Vst::PlugType::kFxNetwork, // Categories (separate with |)
-		   tonplugins::get_version().to_string().c_str(), // Version
+		   TONPLUGINS_TONSTREAM_VERSION_CMAKE, // Version
 		   kVstVersionString, // VST SDK Version
 		   tonplugins::tonstream::processor::create // Function to create the instance.
 )
@@ -33,7 +33,7 @@ DEF_CLASS2(INLINE_UID_FROM_FUID(Steinberg::FUID::fromTUID(tonplugins::tonstream:
 		   "TonStream (Controller)", // Name
 		   0, // Unused
 		   "", // Unused
-		   tonplugins::get_version().to_string().c_str(), // Version
+		   TONPLUGINS_TONSTREAM_VERSION_CMAKE, // Version
 		   kVstVersionString, // VST SDK Version
 		   tonplugins::tonstream::controller::create // Function to create the instance.
 )
