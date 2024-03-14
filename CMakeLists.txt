@@ -9,6 +9,11 @@ project(TonStream
 	HOMEPAGE_URL "https://tonplugins.xaymar.com/"
 )
 list(APPEND CMAKE_MESSAGE_INDENT "[${PROJECT_NAME}] ")
+if(ENABLE_FULL_VERSION)
+	set(PROJECT_TITLE "TonStream")
+else()
+	set(PROJECT_TITLE "TonStream (Demo)")
+endif()
 define_plugin(
 	NAME ${PROJECT_NAME}
 )
