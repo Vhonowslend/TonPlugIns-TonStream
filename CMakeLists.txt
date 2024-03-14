@@ -4,7 +4,10 @@
 # Bootstrap
 ################################################################################
 cmake_minimum_required(VERSION 3.26)
-project(TonStream)
+project(TonStream
+	DESCRIPTION "Stream audio over a local or remote network. (Part of TonPlugIns by Xaymar)"
+	HOMEPAGE_URL "https://tonplugins.xaymar.com/"
+)
 list(APPEND CMAKE_MESSAGE_INDENT "[${PROJECT_NAME}] ")
 define_plugin(
 	NAME ${PROJECT_NAME}
